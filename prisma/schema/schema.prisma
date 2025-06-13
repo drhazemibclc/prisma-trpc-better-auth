@@ -1,0 +1,49 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../../generated"
+  moduleFormat = "esm"
+  previewFeatures = ["views", "relationJoins", "queryCompiler", "driverAdapters"]
+}
+
+datasource db {
+  provider = "postgres"
+  url      = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+
+// generator zod {
+//   provider                         = "zod-prisma-types"
+//   output                           = "../../src/zod"
+//   useMultipleFiles                 = true
+//   writeBarrelFiles                 = true
+//   createInputTypes                 = false
+//   createModelTypes                 = true
+//   addInputTypeValidation           = false
+//   addIncludeType                   = true
+//   addSelectType                    = true
+//   validateWhereUniqueInput         = false
+//   createOptionalDefaultValuesTypes = true
+//   createRelationValuesTypes        = true
+//   createPartialTypes               = true
+//   useDefaultValidators             = false
+//   coerceDate                       = false
+//   writeNullishInModelTypes         = true
+// }
+
+// generator typescriptInterfaces {
+//   provider              = "prisma-generator-typescript-interfaces"
+//   output                = "../../src/interfaces.ts"
+//   prettier              = false
+//   resolvePrettierConfig = false
+//   modelType             = "interface"
+//   enumType              = "enum"
+//   dateType              = "Date"
+//   bigIntType            = "string"
+//   decimalType           = "string"
+//   bytesType             = "ArrayObject"
+//   optionalRelations     = true
+//   optionalNullables     = true
+//   omitRelations         = true
+//   exportEnums           = true
+// }
