@@ -14,5 +14,7 @@
         "**/generated":true
     },
     "editor.minimap.enabled": false,
-    "explorer.excludeGitIgnore": true
+    "explorer.excludeGitIgnore": true,
+    "IDX.aI.enableInlineCompletion": true,
+    "IDX.aI.enableCodebaseIndexing": true
 }

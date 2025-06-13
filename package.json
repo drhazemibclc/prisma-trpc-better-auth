@@ -86,7 +86,6 @@
     "sonner": "2.0.5",
     "superjson": "^2.2.2",
     "tailwind-merge": "3.3.1",
-    "tailwindcss-animate": "^1.0.7",
     "vaul": "^1.1.2",
     "zod": "^3.25.63"
   },
@@ -116,5 +115,10 @@
     "esbuild",
     "prisma",
     "sharp"
-  ]
+  ],
+  "overrides": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "date-fns": "4.1.0"
+  }
 }
